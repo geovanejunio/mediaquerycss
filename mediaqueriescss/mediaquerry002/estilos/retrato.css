@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/* DISPOSITIVO EM PÉ (PORTRAIT) */
+
+/* A POSIÇÃO DO FUNDO DA IMAGEM NO MODO RETRADO É DIFERENTE */
+body{
+    background: url(../imagens/cev-portrait.jpg);
+    background-position: center bottom;
+}

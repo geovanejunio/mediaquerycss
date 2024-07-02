@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+/* TODAS AS DEMAIS MIDIAS */
+
+/* Typical Device Breakpoints
+Device breakpoints: são pontos em que o layout de um site ou aplicativo muda para se adaptar a diferentes tamanhos de tela. Isso ajuda a garantir que o design funcione bem em dispositivos variados, como smartphones, tablets e desktops.
+
+**Breakpoints típicos** usados atualmente incluem:
+
+1. Smartphones:
+   - Pequenos: 320px
+   - Médios: 375px
+   - Grandes: 425px
+
+2. Tablets:
+   - Pequenos: 600px
+   - Grandes: 768px
+
+3. Desktops
+   - Pequenos: 1024px
+   - Médios: 1280px
+   - Grandes: 1440px
+   - Muito grandes: 1920px
+
+Esses valores são comuns e ajudam os desenvolvedores a criar designs que se ajustam bem em diferentes dispositivos. */
+
+/* BREAKPOINT DE TABLETS */
+ @media screen and (min-width: 768px) and (max-width: 1024px) {  
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+        img#telefone {display: none;}
+        img#tablet {display: block;}
+        img#impressora {display: none;}
+        img#computador {display: none;}
+        img#televisao {display: none;}
+    }
+/* BREAKPOINT DE DESKTOPS */
+@media screen and (min-width: 1024px) and (max-width: 1919px){
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    img#telefone {display: none;}
+    img#tablet {display: none;}
+    img#impressora {display: none;}
+    img#computador {display: block;}
+    img#televisao {display: none;}
+}
+
+@media screen and (min-width: 1720px) {
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    img#telefone {display: none;}
+    img#tablet {display: none;}
+    img#impressora {display: none;}
+    img#computador {display: none;}
+    img#televisao {display: block;}
+}
+/* CONFIGURAÇÃO DESNECESSÁRIA, MAS É IMPORTANTE SABER */
+@media print{
+    body{
+        background-image: url(../imagens/back-print.jpg);
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: none;
+        color: black;
+    }
+}
